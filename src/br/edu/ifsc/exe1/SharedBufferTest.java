@@ -26,7 +26,8 @@ public class SharedBufferTest {
 		// create UnsynchronizedBuffer to store ints
 		//Buffer sharedLocation = new ABQBuffer(3);
 		//Buffer sharedLocation = new DoubleBuffer(2);
-		Buffer sharedLocation = new ExchangeBuffer(2);
+		//Buffer sharedLocation = new ExchangeBuffer(2);
+		Buffer sharedLocation = new AtomicBuffer(3);
 		
 		System.out.println("Action\t\tValue\tProduced\tConsumed");
 		System.out.println("------\t\t-----\t--------\t--------\n");
